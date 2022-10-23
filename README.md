@@ -2,6 +2,7 @@
 ## About Sodai
 
 Sodai is open-sourced E-commerce Application
+## Install
 
 ## Contributing
 
