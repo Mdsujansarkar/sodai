@@ -10,6 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/admin', [BackendController::class, 'index']);
-//Route::get('/admin', [BackendController::class, 'index']);
-Route::get('/admin', [App\Http\Controllers\Backend\BackendController::class, 'index']);
+Route::group(['prefix'=>'admin'], function(){
+    Route::get('/', [App\Http\Controllers\Backend\BackendController::class, 'index']);
+    Route::get('/category', [App\Http\Controllers\Backend\BackendController::class, 'index']);
+});
