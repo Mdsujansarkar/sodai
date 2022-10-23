@@ -9,7 +9,7 @@ Sodai is open-sourced E-commerce Application
 Thank you for considering contributing
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Sodai, please send an e-mail to Taylor Otwell via [sujansarkar786@gmail.com](mailto:sujansarkar786@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Sodai, please send an e-mail to Sujan Miya via [sujansarkar786@gmail.com](mailto:sujansarkar786@gmail.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
