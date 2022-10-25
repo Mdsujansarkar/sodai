@@ -14,7 +14,7 @@ class BackendController extends Controller
      */
     public function index()
     {
-        return view('admin.deshboard');
+        return view('admin.home.home');
     }
 
     /**
