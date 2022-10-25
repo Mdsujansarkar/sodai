@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Backend\BackendController;
+use App\Http\Controllers\Backend\Category\CategoriesController;
 /**
  * @Route welcome route
  */
@@ -11,6 +12,6 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix'=>'admin'], function(){
-    Route::get('/', [App\Http\Controllers\Backend\BackendController::class, 'index']);
-    Route::get('/category', [App\Http\Controllers\Backend\BackendController::class, 'index']);
+    Route::get('/', [BackendController::class, 'index']);
+    Route::get('/category', [CategoriesController::class, 'index']);
 });
