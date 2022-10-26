@@ -7,11 +7,17 @@ use App\Http\Controllers\Backend\Category\CategoriesController;
  * @Route welcome route
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::group(['prefix'=>'admin'], function(){
+    /**
+     * Deshboard Routing
+     */
     Route::get('/', [BackendController::class, 'index']);
-    Route::get('/category', [CategoriesController::class, 'index']);
+
+    /**
+     * Category Section CRUD Oparation
+     */
+    Route::group(['prefix'=>'category'], function(){
+        Route::get('/', [CategoriesController::class, 'index']);
+        Route::post('/add', [CategoriesController::class, 'store'])->name('category.store');
+    });
 });
