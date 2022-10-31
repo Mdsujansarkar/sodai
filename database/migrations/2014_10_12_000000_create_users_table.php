@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
             $table->string('password');
+            $table->foreignId('billing_id')->nullable()->constrained('locations')->index();
+            $table->foreignId('shipping_id')->nullable()->constrained('locations')->index();
             $table->rememberToken();
             $table->timestamps();
         });
